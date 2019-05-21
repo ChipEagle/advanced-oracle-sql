@@ -1,0 +1,13 @@
+CREATE SYNONYM emp
+FOR hr.employees;
+
+
+SELECT * FROM emp;
+
+CREATE OR REPLACE SYNONYM emp
+FOR hr.departments;
+
+DROP SYNONYM emp;
+
+CREATE OR REPLACE PUBLIC SYNONYM emp
+FOR hr.departments;
